@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: blueviolet;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.kontener {
+  background-color: brown;
+  width: 80%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.doboz {
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  margin: 10px 10px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 6px double rgb(59, 197, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.doboz:hover {
+  background-color: rgb(238, 219, 8);
+  width: 150px;
+  height: 150px;
+  transition: all ease-in 500ms;
+}
+
+.kep {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+img {
+  width: 50vw;
+}
+
+@media (max-width: 720px) {
+  .doboz {
+    width: 50px;
+    height: 50px;
+  }
+  .kontener {
+    background-color: red;
+  }
+}
+
+@media (min-width: 1100px) {
+  .kontener {
+    background-color: darkorange;
+  }
+}
